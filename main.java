@@ -40,12 +40,12 @@ public class main extends PApplet {
 
         ////////////////////////////////////// Load states file and color the graph
 
-        loadStateData(0);
+        // loadStateData(0);
 
         ////////////////////////////////////// Compute btw for one state to another
 
-        // int from = 1;
-        // int to = 2;
+        // int from = 0;
+        // int to = 5;
 
         // computeBtw(from, to);
 
@@ -80,7 +80,7 @@ public class main extends PApplet {
                 e.printStackTrace();
             }
 
-            graph.graphDiameterDijkstra();
+            graph.computeBtw();
 
             ArrayList<Edge> maxs = graph.getMaxsBtw();
 
