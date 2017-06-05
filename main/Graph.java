@@ -896,7 +896,7 @@ public class Graph
       p.strokeWeight(5);
 
       for (float[] coords : data)
-          p.point(coords[0], 900 - coords[1]); // Draw the nodes
+          p.point(coords[0], 950 - coords[1]); // Draw the nodes
 
       p.strokeWeight(3);
 
@@ -919,7 +919,7 @@ public class Graph
           double lng1 = (Math.sin(edge.node1.lng * p.PI / 180) - minLng) * 6366 * 70;
           double lat2 = (Math.sin(edge.node2.lat * p.PI / 180) - minLat) * 6366 * 60 + 100;
           double lng2 = (Math.sin(edge.node2.lng * p.PI / 180) - minLng) * 6366 * 70;
-          p.line((float) lat1,  900 - ((float) lng1), (float) lat2,  900 - ((float) lng2));
+          p.line((float) lat1,  950 - ((float) lng1), (float) lat2,  950 - ((float) lng2));
       }
   }
 }

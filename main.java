@@ -40,7 +40,7 @@ public class main extends PApplet {
 
         ////////////////////////////////////// Load states file and color the graph
 
-        // loadStateData(0);
+        loadStateData(0);
 
         ////////////////////////////////////// Compute btw for one state to another
 
